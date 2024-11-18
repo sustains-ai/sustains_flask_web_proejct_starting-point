@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/theme.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/snippets.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/docs.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap-icons/font/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/hs-mega-menu/dist/hs-mega-menu.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}">
+
 
 </head>
 
@@ -107,10 +111,10 @@
         <div class="col-lg-6">
           <div class="position-relative">
             <div class="position-relative">
-              <img class="img-fluid" src="@@autopath/assets/img/950x950/img1.jpg" alt="Image Description">
+              <img class="img-fluid" src="{{ url_for('static', filename='images/main_first.jpg') }}" alt="Image Description">
 
               <div class="position-absolute bottom-0 end-0">
-                <img class="w-100" src="@@autopath/assets/svg/illustrations/cubics.svg" alt="SVG" style="max-width: 30rem;">
+                   <img class="img-fluid" src="{{ url_for('static', filename='images/cubics.svg') }}" alt="Image Description">
               </div>
             </div>
 
@@ -119,12 +123,12 @@
               <div class="d-flex align-items-center">
                 <div class="flex-shrink-0">
                   <span class="avatar avatar-sm avatar-circle">
-                    <img class="avatar-img" src="@@autopath/assets/img/160x160/img10.jpg" alt="Image Description">
+                       <img class="img-fluid" src="{{ url_for('static', filename='images/smile_girl_160_160.jpg') }}" alt="Image Description">
                   </span>
                 </div>
                 <div class="flex-grow-1 ms-2">
                   <div class="fs-5 fw-bold mb-0">Julia</div>
-                  <span class="d-block fs-6">Fantastic theme!</span>
+                  <span class="d-block fs-6">Fantastic team</span>
                 </div>
               </div>
             </div>
@@ -135,7 +139,7 @@
               <div class="d-flex align-items-center">
                 <div class="flex-shrink-0">
                   <span class="avatar avatar-sm avatar-circle">
-                    <img class="avatar-img" src="@@autopath/assets/img/160x160/img3.jpg" alt="Image Description">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/160x160/img8.jpg') }}" alt="Image Description">
                   </span>
                 </div>
                 <div class="flex-grow-1 ms-2">
@@ -223,17 +227,18 @@
           <div class="col-lg-7 me-auto ms-lg-n10 mb-5 mb-lg-0">
             <div class="row align-items-center">
               <div class="col-4">
-                <img class="img-fluid rounded-3" src="@@autopath/assets/img/580x480/img1.jpg" alt="Image Description">
+                   <img class="img-fluid" src="{{ url_for('static', filename='img/580x480/img1.jpg') }}" alt="Image Description">
               </div>
               <!-- End Col -->
 
               <div class="col-3">
-                <img class="img-fluid rounded-3" src="@@autopath/assets/img/350x700/img1.jpg" alt="Image Description">
+                   <img class="img-fluid" src="{{ url_for('static', filename='img/350x700/img1.jpg') }}" alt="Image Description">
               </div>
               <!-- End Col -->
 
               <div class="col-5">
-                <img class="img-fluid rounded-3" src="@@autopath/assets/img/400x700/img1.jpg" alt="Image Description">
+                   <img class="img-fluid" src="{{ url_for('static', filename='img/400x700/img1.jpg') }}" alt="Image Description">
+
               </div>
               <!-- End Col -->
             </div>
@@ -333,7 +338,7 @@
     <div class="container content-space-t-2 content-space-t-lg-3">
       <div class="row justify-content-lg-between align-items-lg-center">
         <div class="col-lg-6 mb-5 mb-lg-0">
-          <img class="img-fluid rounded-3" src="@@autopath/assets/img/950x950/img2.jpg" alt="Image Description">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/950x950/img3.jpg') }}" alt="Image Description">
         </div>
         <!-- End Col -->
 
@@ -375,7 +380,7 @@
             <figcaption class="blockquote-footer">
               <div class="d-flex align-items-center">
                 <div class="flex-shrink-0">
-                  <img class="avatar avatar-circle" src="@@autopath/assets/img/160x160/img3.jpg" alt="Image Description">
+                     <img class="img-fluid" src="{{ url_for('static', filename='img/160x160/img3.jpg') }}" alt="Image Description">
                 </div>
 
                 <div class="flex-grow-1 ms-3">
@@ -426,27 +431,27 @@
       <div class="js-swiper-clients swiper text-center">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/mailchimp-dark.svg" alt="Logo">
+                <img class="img-fluid" src="{{ url_for('static', filename='svg/brands/gulp-gray.svg') }}" alt="Image Description">
           </div>
           <!-- End Slide -->
 
           <div class="swiper-slide">
-            <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/sass-dark.svg" alt="Logo">
+              <img class="img-fluid" src="{{ url_for('static', filename='svg/brands/gulp-gray.svg') }}" alt="Image Description">
           </div>
           <!-- End Slide -->
 
           <div class="swiper-slide">
-            <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/forbes-dark.svg" alt="Logo">
+                <img class="img-fluid" src="{{ url_for('static', filename='/svg/components/card-1.svg') }}" alt="Image Description">
           </div>
           <!-- End Slide -->
 
           <div class="swiper-slide">
-            <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/gitlab-dark.svg" alt="Logo">
+               <img class="img-fluid" src="{{ url_for('static', filename='/svg/brands/gitlab-dark.svg') }}" alt="Logo">
           </div>
           <!-- End Slide -->
 
           <div class="swiper-slide">
-            <img class="avatar avatar-lg avatar-4x3" src="@@autopath/assets/svg/brands/hubspot-dark.svg" alt="Logo">
+               <img class="img-fluid" src="{{ url_for('static', filename='/svg/brands/hubspot-dark.svg') }}" alt="Logo">
           </div>
           <!-- End Slide -->
         </div>
