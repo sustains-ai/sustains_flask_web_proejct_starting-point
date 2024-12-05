@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/static/coming-soon.html"
+      "dest": "app.py"
     }
   ]
 }
