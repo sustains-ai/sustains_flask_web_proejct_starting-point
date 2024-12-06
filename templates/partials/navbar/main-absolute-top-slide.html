@@ -1,0 +1,54 @@
+<header id="header" class="navbar navbar-expand-lg navbar-absolute-top navbar-light navbar-show-hide"
+        data-hs-header-options='{
+          "fixMoment": 500,
+          "fixEffect": "slide"
+        }'>
+  <div class="container">
+    <nav class="js-mega-menu navbar-nav-wrap">
+      <!-- Default Logo -->
+      <a class="navbar-brand" href="{{ url_for('index') }}" aria-label="Sustains.ai">
+        <img class="navbar-brand-logo" src="{{ url_for('static', filename='svg/logos/logo.svg') }}" alt="Sustains.ai Logo">
+      </a>
+      <!-- End Default Logo -->
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-default">
+          <i class="bi-list"></i>
+        </span>
+        <span class="navbar-toggler-toggled">
+          <i class="bi-x"></i>
+        </span>
+      </button>
+      <!-- End Toggler -->
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="navbar-absolute-top-scroller">
+          <ul class="navbar-nav nav-pills">
+            <!-- Navbar Links -->
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('services') }}">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+            <!-- End Navbar Links -->
+
+            <!-- Log in -->
+            <li class="nav-item ms-lg-auto">
+              <a class="btn btn-ghost-dark me-2 me-lg-0" href="{{ url_for('pagelogin') }}">Log in</a>
+              <a class="btn btn-dark d-lg-none" href="{{ url_for('pagesignup') }}">Sign up</a>
+            </li>
+            <!-- End Log in -->
+
+            <!-- Sign up -->
+            <li class="nav-item">
+              <a class="btn btn-dark d-none d-lg-inline-block" href="{{ url_for('pagesignup') }}">Sign up</a>
+            </li>
+            <!-- End Sign up -->
+          </ul>
+        </div>
+      </div>
+      <!-- End Collapse -->
+    </nav>
+  </div>
+</header>
