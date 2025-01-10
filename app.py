@@ -19,6 +19,11 @@ def services():
 def contact():
     return render_template('contact.html')
 
+@app.route('/hire-us')
+def hire_us():
+    return render_template('hire-us.html')
+
+
 @app.route('/login')
 def pagelogin():
     return render_template('page-login.html')

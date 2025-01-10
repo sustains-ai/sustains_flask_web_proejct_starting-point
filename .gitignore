@@ -7,3 +7,4 @@ sustainsvenv/
 .DS_Store
 *.log
 health_data.db
+venv/
