@@ -6,5 +6,5 @@ __pycache__/
 sustainsvenv/
 .DS_Store
 *.log
-health_data.db
+sustains_data.db
 venv/

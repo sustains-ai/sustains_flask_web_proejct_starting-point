@@ -11,17 +11,17 @@ def index():
 def about():
     return render_template('about.html')
 
-@app.route('/services')
-def services():
-    return render_template('services.html')
+@app.route('/sandbox')
+def sandbox():
+    return render_template('sandbox.html')
 
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
 
-@app.route('/hire-us')
-def hire_us():
-    return render_template('hire-us.html')
+@app.route('/entropy')
+def entropy():
+    return render_template('entropy.html')
 
 
 @app.route('/login')
