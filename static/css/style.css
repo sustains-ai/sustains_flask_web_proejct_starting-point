@@ -17,3 +17,9 @@ header.navbar {
 main {
   margin-top: 80px; /* Adjust based on header height */
 }
+<style>
+  .navbar-brand-logo {
+    width: 2000px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+  }
+</style>
