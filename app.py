@@ -11,9 +11,9 @@ def index():
 def about():
     return render_template('about.html')
 
-@app.route('/sandbox')
-def sandbox():
-    return render_template('sandbox.html')
+@app.route('/products')
+def products():
+    return render_template('products.html')
 
 @app.route('/contact')
 def contact():
