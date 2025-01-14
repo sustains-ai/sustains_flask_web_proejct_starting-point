@@ -1,7 +1,7 @@
 {
-  "name": "Unify",
+  "name": "sustains.ai",
   "version": "3.2.1",
-  "description": "Unify - Multipurpose Responsive Template",
+  "description": "sustains.ai - AI driven risk analytics",
   "main": "gulpfile.js",
   "author": "htmlstream",
   "scripts": {
