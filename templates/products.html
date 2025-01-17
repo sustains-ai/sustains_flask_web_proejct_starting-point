@@ -23,76 +23,89 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap-icons/font/bootstrap-icons.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='vendor/hs-mega-menu/dist/hs-mega-menu.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}">
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
+
 
 <body>
   <!-- ========== HEADER ========== -->
    {% include 'partials/navbar/main-absolute-top.html' %}
   <!-- ========== END HEADER ========== -->
 
-  <!-- ========== MAIN CONTENT ========== -->
-  <main id="content" role="main">
-    <!-- Hero -->
-    <div class="overflow-hidden">
-      <div class="container content-space-t-3">
-        <div class="row justify-content-lg-between align-items-md-center">
-          <div class="col-md-6 col-lg-5 mb-5 mb-lg-0">
-            <h1 class="display-4 mb-5">Explore our core <span class="text-primary">solutions</span></h1>
+ <!-- ========== MAIN CONTENT ========== -->
+<main id="content" role="main">
+  <!-- Section Title -->
+  <div class="container content-space-t-3 content-space-t-lg-4">
+    <div class="row align-items-center">
+      <!-- Left Column: Text Content -->
+      <div class="col-md-6">
+        <h1 class="display-4 mb-5">Explore our core <span class="text-primary">solutions</span></h1>
+        <div class="border-top border-2 my-4" style="max-width: 5rem;"></div>
 
-            <div class="border-top border-2 my-5" style="max-width: 5rem;"></div>
-
-            <!-- Blockquote -->
-            <figure>
-              <blockquote class="blockquote"><em>At Sustains.ai, we believe in empowering businesses with actionable insights to make smarter decisions in finance and energy. Together, we can shape a more sustainable future.</em></blockquote>
-
-              <figcaption class="blockquote-footer">
-                <div class="d-flex align-items-center">
-                  <div class="flex-shrink-0">
-                       <img class="img-fluid" src="{{ url_for('static', filename='img/160x160/aswin3.jpg') }}" alt="Image Description">
-                  </div>
-
-                  <div class="flex-grow-1 ms-3">
-                    Aswin Nambiar
-                    <span class="blockquote-footer-source">CEO,Co-founder | sustains.ai</span>
-                  </div>
-                </div>
-              </figcaption>
-            </figure>
-            <!-- End Blockquote -->
-          </div>
-          <!-- End Col -->
-
-          <div class="col-md-6 col-lg-5 d-none d-md-block">
-            <div class="row gx-3 me-lg-n10">
-              <div class="col-3 offset-1 align-self-end mb-3">
-                   <img class="img-fluid" src="{{ url_for('static', filename='svg/components/plus-circle-dotted.svg') }}" alt="Image Description">
+        <!-- Blockquote -->
+        <figure>
+          <blockquote class="blockquote">
+            <em>At Sustains.ai, we believe in empowering businesses with actionable insights to make smarter decisions in finance and energy. Together, we can shape a more sustainable future.</em>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            <div class="d-flex align-items-center">
+              <div class="flex-shrink-0">
+                <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/160x160/aswin3.jpg') }}" alt="Aswin Nambiar">
               </div>
-              <!-- End Col -->
-
-              <div class="col-8 mb-3">
-                  <img class="img-fluid rounded-3" src="{{ url_for('static', filename='img/950x950/iStock-1.jpg') }}" alt="Image Description">
+              <div class="flex-grow-1 ms-3">
+                Aswin Nambiar
+                <span class="blockquote-footer-source">CEO, Co-founder | Sustains.ai</span>
               </div>
-              <!-- End Col -->
-
-              <div class="col-6">
-                  <img class="img-fluid rounded-3" src="{{ url_for('static', filename='img/950x950/img9.jpg') }}" alt="Image Description">
-              </div>
-              <!-- End Col -->
-
-              <div class="col-5">
-                  <img class="img-fluid" src="{{ url_for('static', filename='svg/components/check.svg') }}" alt="Image Description">
-              </div>
-              <!-- End Col -->
             </div>
-            <!-- End Row -->
-          </div>
-          <!-- End Col -->
-        </div>
-        <!-- End Row -->
+          </figcaption>
+        </figure>
+        <!-- End Blockquote -->
+
+        <p class="lead mt-4">
+          Discover how our innovative solutions are shaping the future of finance and energy with precision and sustainability.
+        </p>
       </div>
+      <!-- End Left Column -->
+
+      <!-- Right Column: Animation and Images -->
+      <div class="col-md-6">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <!-- Lottie Animation -->
+          <lottie-player
+            src="{{ url_for('static', filename='json/animation_4.json') }}"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px;"
+            loop
+            autoplay>
+          </lottie-player>
+
+          <!-- Image Grid -->
+          <div class="row mt-4 gx-3">
+            <!-- Top Left Image -->
+            <div class="col-6 mb-3">
+              <img class="img-fluid rounded-3" src="{{ url_for('static', filename='svg/components/three-arrows-1.svg') }}" alt="Plus Circle Dotted">
+            </div>
+            <!-- Top Right Image -->
+            <div class="col-6 mb-3">
+              <img class="img-fluid rounded-3" src="{{ url_for('static', filename='img/950x950/finance_1.jpg') }}" alt="iStock 1">
+            </div>
+            <!-- Bottom Left Image -->
+            <div class="col-6">
+              <img class="img-fluid rounded-3" src="{{ url_for('static', filename='img/950x950/energy_1.jpg') }}" alt="Image 1">
+            </div>
+            <!-- Bottom Right Image -->
+{#            <div class="col-6">#}
+{#              <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='svg/components/check.svg') }}" alt="Check Icon">#}
+{#            </div>#}
+          </div>
+        </div>
+      </div>
+      <!-- End Right Column -->
     </div>
-    <!-- End Hero -->
+  </div>
+</main>
+
 
     <!-- Features -->
     <div class="overflow-hidden">
