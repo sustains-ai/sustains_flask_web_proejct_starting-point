@@ -1,23 +1,36 @@
-# Welcome to  AI-Driven Risk Analytics for Finance and Energy! #
+Sustains.ai Website
+Welcome to the official repository for the sustains.ai website. This project is designed to provide an intuitive and visually appealing platform for showcasing the products and services offered by sustains.ai, a company specializing in AI-driven risk analytics for the finance and energy sectors.
 
-Unify Template by Htmlstream
+Features
+Responsive Design: Optimized for seamless experiences on both desktop and mobile devices.
+Dynamic Content: Leverages Flask for server-side rendering and interactive features.
+Interactive Animations: Engaging Lottie animations and visual storytelling.
+Core Product Highlights:
+Risk Analytics Platform
+Equity Research Platform
+Energy Resource Planner
+Load Flow Analysis
+Custom Consultancy Services
+Contact Us Form: Simplified communication interface for client inquiries.
+Tech Stack
+Frontend:
+HTML5, CSS3, JavaScript (Bootstrap, Lottie Player)
+Backend:
+Flask (Python)
+Additional Tools:
+Bootstrap Icons
+Swiper.js for sliders
+Flask url_for for dynamic linking
 
-### Documentation and Getting Started ###
-
-The overall development documentation is available at `documentation/getting-started.html` and Gulp documentation at `documentation/gulp.html`.
-
-Below is quick steps to run Gulp:
-
-- npm install --global gulp-cli
-- npm install
-- gulp
-
-Yup, that's it.
-
-### Theme Support ###
-
-Have a question? No worries! Unify comes with 6 months of free support. We take seriously every issue that is reported to us, and we aim to resolve each one as quickly as possible. Feel free to “Contact Us” at https://htmlstream.com/contact-us
-
-### Need Unify Template customization? ###
-
-We offer affordable, professional and trendy customized design solutions, solely for your own projects! Unify Template can be easily customized with its cutting-edge components and features. However, if you feel you need any further customization please drop us a message at https://htmlstream.com/hire-us and our dedicated team will assist you with your inquiries.
+sustains-ai-website/
+├── static/                 # Static assets (CSS, JS, images, animations)
+│   ├── css/                # Stylesheets
+│   ├── img/                # Images
+│   ├── json/               # Lottie animations
+│   └── vendor/             # External libraries (Bootstrap, Swiper.js)
+├── templates/              # HTML templates
+│   ├── partials/           # Reusable components (navbar, footer)
+│   └── pages/              # Individual pages (index.html, about.html, etc.)
+├── app.py                  # Flask application
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
