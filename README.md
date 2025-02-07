@@ -22,15 +22,3 @@ Bootstrap Icons
 Swiper.js for sliders
 Flask url_for for dynamic linking
 
-sustains-ai-website/
-├── static/                 # Static assets (CSS, JS, images, animations)
-│   ├── css/                # Stylesheets
-│   ├── img/                # Images
-│   ├── json/               # Lottie animations
-│   └── vendor/             # External libraries (Bootstrap, Swiper.js)
-├── templates/              # HTML templates
-│   ├── partials/           # Reusable components (navbar, footer)
-│   └── pages/              # Individual pages (index.html, about.html, etc.)
-├── app.py                  # Flask application
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
